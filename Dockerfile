@@ -12,4 +12,4 @@ RUN dotnet publish -c release -o /app --no-restore
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS run
 WORKDIR /app
 COPY --from=build /app ./
-CMD [ ""dotnet", "ConversaoPeso.Web.dll"" ]
+CMD [ "dotnet", "ConversaoPeso.Web.dll" ]

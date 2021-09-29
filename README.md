@@ -1,5 +1,5 @@
 # conversao-peso
 
-docker build -t aspnetapp .
+docker build -t julioapm/conversao-peso:v1 .
 
-docker run -it --rm -p 5000:80 --name aspnetcore_sample aspnetapp
+docker container run -d -p 5000:80 julioapm/conversao-peso:v1
